@@ -30,7 +30,7 @@ export default function Home() {
       <CardFetch/>
 
 
-
+<p>Este sitio obtiene información de las API públicas del BCRA, pero no pertenece al gobierno ni a un movimiento político. Tiene como finalidad ser meramente informativo para la ciudadanía.</p>
     </main>
   );
 }
