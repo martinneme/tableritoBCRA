@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+ #buttonGraf {
+  background-color: #3b97f8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 1%;
+}
+
+#buttonGraf:hover {
+  background-color: #15477c;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -31,3 +46,47 @@ body {
     text-wrap: balance;
   }
 }
+
+.titleProyect{
+  justify-content:center;
+margin:1%
+}
+
+.titleProyect p{
+
+  width: 100%;
+}
+
+.CardInfo {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #000;
+}
+
+.CardInfo-description {
+  font-size: 1rem;
+  margin: 0 0 8px;
+  color: #666;
+}
+
+.CardInfo-value {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+.CardInfo-date {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+
+.buttonPanelItem{
+  display:flex;
+}
+
