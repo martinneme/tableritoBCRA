@@ -11,7 +11,8 @@ export default function Home() {
     </code>
   </p>
 </div>
-<p>Este sitio obtiene información de las API públicas del BCRA, pero no pertenece al gobierno ni a un movimiento político. Tiene como finalidad ser meramente informativo para la ciudadanía.</p>
+<p><i style={{
+    fontSize: "0.75rem;" }}>Este sitio obtiene información de las API públicas del BCRA. No pertenece al gobierno ni a ningun movimiento político. Tiene como finalidad ser meramente informativo para la ciudadanía. </i></p>
 
       <CardFetch/>
     </main>

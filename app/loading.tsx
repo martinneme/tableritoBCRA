@@ -4,7 +4,7 @@ const Loading: React.FC = () => {
   return (
     <div className="loaderContainer">
       <div className="loader"></div>
-      <p className="loadingText">Obteniendo informacion del BCRA</p>
+      <p className="loadingText">Obteniendo información del BCRA</p>
     </div>
   );
 };
