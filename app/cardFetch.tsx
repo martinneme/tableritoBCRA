@@ -44,7 +44,7 @@ export default function CardFetch() {
 
   const fetchIndividualVar = async (variableId: number) => {
     try {
-      const startDate = '2024-05-01';
+      const startDate = '2023-09-01';
       const endDate = getFormattedDate(new Date()); 
       const url = `https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/${variableId}/${startDate}/${endDate}`;
       const response = await fetch(url);
