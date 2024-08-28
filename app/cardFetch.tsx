@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import LineChart from "./lineChart";
 import Loading from "./loading";
+import { start } from "repl";
 
 // Define la estructura de los datos esperados
 interface Variable {
@@ -44,8 +45,10 @@ export default function CardFetch() {
 
   const fetchIndividualVar = async (variableId: number) => {
     try {
-      const startDate = '2023-09-01';
       const endDate = getFormattedDate(new Date()); 
+      const dateYearBefore = new Date();
+      dateYearBefore.setFullYear(dateYearBefore.getFullYear() - 1);
+      const startDate =  getFormattedDate(dateYearBefore); 
       const url = `https://api.bcra.gob.ar/estadisticas/v2.0/DatosVariable/${variableId}/${startDate}/${endDate}`;
       const response = await fetch(url);
       const dataJson = await response.json();
@@ -99,7 +102,7 @@ export default function CardFetch() {
           {idsToShow.map((id,index) => (
             <div key={id} style={{ width: '100%',  backgroundColor: 'white', margin: 'auto' }} className="titleLine">
               <h2></h2>
-        <p className="titleProyect">
+        <p className="titleProyect varTitle">
           <code className="font-mono font-bold f-white">{descriptVar[index]}</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">

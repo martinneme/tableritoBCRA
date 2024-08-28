@@ -97,6 +97,8 @@ color: #708BB5;;
 .titleLine{
   color: black;
   background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .loaderContainer {
@@ -104,12 +106,12 @@ color: #708BB5;;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Ajusta según tus necesidades */
+  height: 100vh; 
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* Gris claro */
-  border-top: 8px solid #708BB5;; /* Azul */
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #708BB5; 
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -125,4 +127,16 @@ color: #708BB5;;
   margin-top: 20px;
   font-size: 18px;
   color: #ebebeb; /* Color de texto */
+}
+
+.varTitle{
+margin: auto;
+border: 1px solid #ddd;
+  border-radius: 8px;
+  border-color: #000;
+  width: 80%;
+margin-top: 1%;
+background-color: #0c0c0d;
+  color:#91a6c5;
+  font-size: 0.85rem;
 }

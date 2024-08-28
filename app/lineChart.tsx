@@ -64,7 +64,7 @@ const LineChart: React.FC<LineChartProps> = ({ data, labels }) => {
       y: {
         title: {
           display: true,
-          text: 'Valor',
+          text: '',
         },
       },
     },
