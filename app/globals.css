@@ -49,11 +49,12 @@ body {
 
 .titleProyect{
   justify-content:center;
+  text-align: center;
 margin:1%
 }
 
 .titleProyect p{
-
+  text-align: center;
   width: 100%;
 }
 
@@ -90,3 +91,8 @@ margin:1%
   display:flex;
 }
 
+
+.titleLine{
+  color: black;
+  background-color: white;
+}

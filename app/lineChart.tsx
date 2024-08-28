@@ -21,14 +21,13 @@ interface LineChartProps {
 
 
 
-const LineChart: React.FC<LineChartProps> = ({ labels, data }) => {
+const LineChart: React.FC<LineChartProps> = ({ data, labels }) => {
 
-    const labe = []
   const chartData = {
     labels: labels,
     datasets: [
       {
-        label: 'Reservas Internacionales del BCRA (en millones de dólares - cifras provisorias sujetas a cambio de valuación)',
+        label: ' ',
         data: data,
         borderColor: 'rgb(75, 192, 192)',
         backgroundColor:'rgba(255, 255, 255, 0.1)',
@@ -65,7 +64,7 @@ const LineChart: React.FC<LineChartProps> = ({ labels, data }) => {
       y: {
         title: {
           display: true,
-          text: 'En Millones de USD',
+          text: 'Valor',
         },
       },
     },
