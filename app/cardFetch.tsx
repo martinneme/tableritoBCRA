@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import LineChart from "./lineChart";
+import Loading from "./loading";
 
 // Define la estructura de los datos esperados
 interface Variable {
@@ -92,7 +93,7 @@ export default function CardFetch() {
   return (
     <div style={{ width: '100%' }}>
       {loading ? (
-        <p>Loading...</p>
+  <Loading />
       ) : (
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '20px' ,margin:'auto'}}>
           {idsToShow.map((id,index) => (
