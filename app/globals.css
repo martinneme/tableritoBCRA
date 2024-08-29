@@ -126,7 +126,7 @@ color: #708BB5;;
 .loadingText {
   margin-top: 20px;
   font-size: 18px;
-  color: #ebebeb; /* Color de texto */
+  color: #ebebeb; 
 }
 
 .varTitle{
@@ -139,4 +139,48 @@ margin-top: 1%;
 background-color: #0c0c0d;
   color:#91a6c5;
   font-size: 0.85rem;
+}
+
+.disclaimer{
+  font-size: 1rem;
+  background-color: #f3f3f3; 
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.buttonAcept{
+  background-color: #708BB5; 
+  color:#fff;
+
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.buttonAcept:hover{
+    background-color:  #f3f3f3; 
+  color: #000;
+}
+
+#modalSection{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
 }
