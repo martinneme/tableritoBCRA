@@ -161,6 +161,10 @@ background-color: #0c0c0d;
   max-width: 500px;
 }
 
+.creator{
+  margin-left: 2%;
+}
+
 .buttonAcept{
   background-color: #708BB5; 
   color:#fff;
@@ -168,6 +172,14 @@ background-color: #0c0c0d;
   border-radius: 5px;
   border: 1px solid #ddd;
   padding: 10px;
+}
+
+.buttonLinkedin{ 
+  background-color: #708BB5; 
+  color:#fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 3px;
 }
 
 .buttonAcept:hover{
