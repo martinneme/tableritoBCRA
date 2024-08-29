@@ -47,6 +47,11 @@ body {
   }
 }
 
+
+.title{
+  width: 90%;
+}
+
 .titleProyect{
   justify-content:center;
   text-align: center;

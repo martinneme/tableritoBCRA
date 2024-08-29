@@ -1,7 +1,7 @@
 // LineChart.tsx
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip,Filler  } from 'chart.js';
 
 // Registrar los componentes necesarios de Chart.js
 ChartJS.register(
@@ -11,7 +11,7 @@ ChartJS.register(
   PointElement,
   Title,
   Tooltip,
-  Legend
+  Filler
 );
 
 interface LineChartProps {
@@ -57,7 +57,7 @@ const LineChart: React.FC<LineChartProps> = ({ data, labels }) => {
           text: 'Fecha',
         },
           ticks: {
-          autoSkip: true, // Muestra todas las etiquetas
+          autoSkip: true, 
       
         },
       },

@@ -94,7 +94,7 @@ export default function CardFetch() {
   }, []); // Solo se ejecuta una vez para obtener los IDs inicialmente
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '90%' }}>
       {loading ? (
   <Loading />
       ) : (
@@ -109,7 +109,7 @@ export default function CardFetch() {
          
         </div>
 
-              {chartsData[id] && <LineChart data={chartsData[id].data} labels={chartsData[id].labels} />} {/* Solo renderizar el gráfico si los datos están disponibles */}
+              {chartsData[id] && <LineChart data={chartsData[id].data} labels={chartsData[id].labels}/>} 
             </div>
           ))}
         </div>
