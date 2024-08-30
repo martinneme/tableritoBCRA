@@ -22,7 +22,7 @@ export default function Home() {
         <Modal/>
       </section>
       <CardFetch />
-      <p></p>
+      <div className="footer"></div>
     </main>
   );
 }
