@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 
 
 
-export default function avisoLegal() {
+export default function AvisoLegal() {
     const router = useRouter();
 
     const goToBack = () => {
