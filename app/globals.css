@@ -110,6 +110,10 @@ color: #708BB5;;
   border-radius: 8px;
 }
 
+.borderS{
+  border-radius: 8px;
+}
+
 .loaderContainer {
   display: flex;
   flex-direction: column;
@@ -208,4 +212,19 @@ background-color: #0c0c0d;
 
 .footer{
   padding-top: 200px;
+}
+
+.buttonNav{
+  background-color: #708BB5; 
+  color:#fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  text-align: center;
+}
+
+.variablesSection{
+ margin: auto;
+ text-align: center;
+ justify-content: center;
 }
