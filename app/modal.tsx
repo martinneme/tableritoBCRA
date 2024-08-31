@@ -13,7 +13,7 @@ const Modal: React.FC = () => {
   return (
     <div className={isHidden ? 'hidden' : ''} id="modalSection" >
       <div className="disclaimer">
-      <p ><i >Este sitio obtiene información de las API públicas del BCRA y otras fuentes no oficiales. No pertenece al gobierno ni a ningun movimiento político. Tiene como finalidad ser meramente informativo para la ciudadanía. </i></p>
+      <p ><i >Este sitio obtiene información de las API públicas del BCRA y otras fuentes. No pertenece al gobierno ni a ningun movimiento político. Tiene como finalidad ser meramente informativo para la ciudadanía. </i></p>
       <button onClick={() => goToVariables("/avisoLegal")} className="buttonAcept">
     Aviso legal
       </button>
