@@ -15,6 +15,7 @@ const CardIndiceContainer = () => {
     { id: 3, title: "INFLACION INTERANUAL", route: "/",url:"https://api.argentinadatos.com/v1/finanzas/indices/inflacionInteranual" },
     { id: 4, title: "INDICA UVA", route: "/",url:"https://api.argentinadatos.com/v1/finanzas/indices/uva" },
     { id: 5, title: "VARIABLES PRINCIPALES", route: "/variablesPrincipales",url:"" },
+    { id: 6, title: "DEUDORES", route: "/deudores",url:"" },
 
   ];
 
