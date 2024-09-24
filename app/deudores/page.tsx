@@ -6,16 +6,22 @@ export default function DeudoresMain() {
     const router = useRouter();
     const [inputValue, setInputValue] = useState('');
     const [deudor, setDeudorValue] = useState<any>(null);
+    const [resultError, setResultError] = useState(false);
 
     async function getDeuda() {
         const url = `https://api.bcra.gob.ar/centraldedeudores/v1.0/Deudas/${inputValue}`;
         const response = await fetch(url);
         const dataJson = await response.json();
-        setDeudorValue(dataJson.results);
-        console.log(dataJson);
+        if(dataJson.results){
+               setDeudorValue(dataJson.results);
+        }else{
+                setResultError(true)
+        }
+     
     }
 
     const handleSearch = () => {
+        setResultError(false)
         if (inputValue.length >= 11) {
             getDeuda();
         } else {
@@ -53,7 +59,7 @@ export default function DeudoresMain() {
                         Buscar
                     </button>
                 </section>
-
+                {resultError &&   <p className="text-lg font-semibold text-[#fffff]">No se han encontrado resultados para el identificador</p> }
                 {deudor && (
                     <div className="mt-10 p-6 bg-gradient-to-b from-zinc-200 dark:bg-zinc-800/30 dark:from-inherit rounded-xl shadow-lg border border-gray-300 dark:border-neutral-800">
                         <h2 className="text-2xl font-bold uppercase text-[#fff] mb-4">{deudor.denominacion}</h2>
