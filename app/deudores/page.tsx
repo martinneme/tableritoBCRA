@@ -75,7 +75,7 @@ export default function DeudoresMain() {
                                         <p className="text-lg text-[#000] dark:text-[#fff]">Fecha situación: {entidad.fechaSit1}</p>
                                         <p className="text-lg text-[#000] dark:text-[#fff]">Situación: {entidad.situacion}</p>
                                         <p className="text-lg text-[#000] dark:text-[#fff]">Refinanciaciones: {entidad.refinanciaciones == false ? "NO" : "SI" }</p>
-                                        <p className="text-lg text-[#000] dark:text-[#fff]">Días de atraso en el pago: {entidad.diasAtrasoPago == false ? "NO" : "SI"}</p>
+                                        <p className="text-lg text-[#000] dark:text-[#fff]">Días de atraso en el pago: {entidad.diasAtrasoPago}</p>
                                         <p className="text-lg text-[#000] dark:text-[#fff]">Recategorizacion obligatoria: {entidad.recategorizacionOblig == false ? "NO" : "SI"}</p>
                                         <p className="text-lg text-[#000] dark:text-[#fff]">Situacion juridica: {entidad.situacionJuridica == false ? "NO" : "SI"}</p>
                                         <p className="text-lg text-[#000] dark:text-[#fff]">Irrecuperable por Disposición Técnica: {entidad.irrecDisposicionTecnica == false ? "NO" : "SI"}</p>
